@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>register page</title>
+
+    <style type="text/css">
+    	.m{
+	padding-top: 40px;
+	padding-right: 20px;
+}
+.t1{
+	padding: 3px;
+}
+.t2{
+	padding: 3px;
+}
+.t3{
+	padding: 3px;
+}
+.t4{
+	padding: 3px;
+}
+
+.x{
+	background-color: lightgreen;
+}
+#b{
+	padding-left: 210px;
+}
+
+table {
+        width: 800px;
+        height: 200px;
+        border: 1px solid #bdc3c7;
+        box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.2), -1px -1px 8px rgba(0, 0, 0, 0.2);
+        background-color: lightgreen;
+        border-radius: 6px;
+    }
+    
+    tr {
+        transition: all .2s ease-in;
+        cursor: pointer;
+    }
+    
+    th,
+    td {
+        padding: 12px;
+        text-align: left;
+        border-bottom: 1px solid #ddd;
+    }
+   
+    tr:hover {
+        background-color: #f5f5f5;
+        transform: scale(1.02);
+        box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.2), -1px -1px 8px rgba(0, 0, 0, 0.2);
+    }
+a{
+	transition: 0.5s;
+	position: relative;
+	background-color: orange;
+	text-decoration: none;
+	color: black;
+}
+a:hover{
+	background: var(--clr);
+	letter-spacing: 0.15em;
+	height: 3px;
+	background-color: orange;
+	text-decoration: none;
+	color: black;
+}
+b{
+	padding-left:95px;
+}
+
+    </style>
+</head>
+
+<body style="background-image: linear-gradient(to right, skyblue, pink)">
+    <center class="m">
+        <form action="sign_up" method="post">
+            <table>
+                <tr>
+                    <td colspan="2" id="b"><b>Registration form</b></td>
+                </tr>
+                <tr>
+                    <td><label>First_name</label></td>
+                    <td><input type="text" maxlength="20" name="First_name" /></td>
+                </tr>
+                <tr>
+                    <td><label>Last_name</label></td>
+                    <td><input type="text" maxlength="50" name="Last_name" /></td>
+                </tr>
+                <tr>
+                    <td><label class="m">Date_of_birth</label></td>
+                    <td><input type="date" name="dob" /></td>
+                </tr>
+                <tr>
+                    <td><label>Gender</label></td>
+                    <td>
+                        <input type="radio" name="gender" id="male" value="male" />
+                        <label for="male">Male</label>
+                        <input type="radio" name="gender" id="female" value="female" />
+                        <label for="female">Female</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label class="l1"> Mobile_Number </label>
+                    </td>
+
+                    <td>
+                        <input type="text" pattern="\d*" maxlength="10" class="t1" name="Mobile_number" />
+                    </td>
+                </tr>
+                <tr>
+                    <td><label>E_mail</label></td>
+                    <td>
+                        <input type="text" pattern="[A-Z,a-z,0-9]+@[a-z]+\.[a-z]{2,4}" maxlength="70" class="t2" name="E_mail" />
+                    </td>
+                </tr>
+                <tr>
+                    <td><label>Password</label></td>
+                    <td>
+                        <input type="Password" pattern="[A-Za-z0-9]+" maxlength="20" class="t3" name="password" />
+                    </td>
+                </tr>
+                <tr>
+                    <td><label class="l2">Re_enter_Password</label></td>
+                    <td>
+                        <input type="Password" pattern="[A-Za-z0-9]+" maxlength="20" class="t4" name="rp" />
+                    </td>
+                </tr>
+            </table>
+            <br />
+            <button type="submit">Register</button> </center>
+</body>
+
+</html>
